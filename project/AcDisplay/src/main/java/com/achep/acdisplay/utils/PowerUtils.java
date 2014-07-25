@@ -68,7 +68,8 @@ public class PowerUtils {
     }
 
     public static boolean isScreenOn(PowerManager pm) {
-        return Device.hasLemonCakeApi() ? pm.isInteractive() : pm.isScreenOn();
+//        return Device.hasLemonCakeApi() ? pm.isInteractive() : pm.isScreenOn();
+        return pm.isScreenOn();
     }
 
 }
